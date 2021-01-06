@@ -1,0 +1,16 @@
+.header{
+  display: flex;
+  padding: 2rem 4rem;
+  justify-content: space-between;
+  align-items: center;
+  &__nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+li{
+  margin-right: 2.5rem;
+}
+
