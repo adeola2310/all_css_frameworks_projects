@@ -1,8 +1,11 @@
+
+
 .header{
   display: flex;
   padding: 2rem 4rem;
   justify-content: space-between;
   align-items: center;
+
   &__nav{
     list-style: none;
     display: flex;
@@ -14,3 +17,274 @@ li{
   margin-right: 2.5rem;
 }
 
+.heading{
+  display: flex;
+  padding: 8rem 3rem;
+  justify-content: space-between;
+
+  &__text{
+    flex-direction: column;
+    &--sub{
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    &--email{
+      padding: 1rem 1rem;
+      outline: 0;
+      width: 45%;
+      border-radius: 3px;
+      border: 1px solid #bdbdbd;
+    }
+    &--btn
+    {
+      background-color: $brightBlue;
+      color: $primary-color;
+      border-radius: 2px;
+      margin-top: 2rem;
+      outline: 0;
+      width: 25%;
+      border: none;
+      padding: 1rem 1.6rem;
+    }
+  }
+}
+.bg-img{
+  width: 50%;
+}
+
+.testimonial{
+  background-color: $light-gray-blue;
+  margin-top: 10rem;
+  &__card{
+    background-color: $primary-color;
+    border-radius: 5px;
+    margin-top: 4rem;
+    width: 40%;
+    height: fit-content;
+    &--content{
+      padding: 3rem 2.5rem;
+    }
+    &--text{
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+    &--avatar{
+      img{
+        border-radius: 50%;
+        width: 25%;
+      }
+      p{
+        font-size: 1rem;
+      }
+
+      //&--text{
+      //  margin-right: 30px;
+      //}
+    }
+  }
+  &__btn{
+    border: 0;
+    margin-top: 1rem;
+    border-bottom: 2px solid $moderate;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: $moderate;
+
+    &--icon{
+      margin-right: .8rem;
+      padding-left: 1rem;
+    }
+  }
+  &__text--sub{
+    line-height: 1.5;
+    width: 70%;
+  }
+  &__text--subtwo{
+    margin-top: 3rem;
+    width: 70%;
+
+  }
+}
+.contents{
+  display: flex;
+  background: url("images/bg-curve-desktop.svg");
+  padding: 3rem 3rem;
+  justify-content: space-between;
+}
+.testimonial_img
+{
+  width: 40%;
+}
+.access{
+  background-color: $DesaturatedBlue;
+  padding: 4rem 3rem;
+  &__contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--mail{
+      background-color: $primary-color;
+      width: 180%;
+      padding: 1rem 1rem;
+      outline: 0;
+      border: 0;
+    }
+    &--btn{
+      background-color: $brightBlue;
+      color: $primary-color;
+      border-radius: 2px;
+      margin-top: 2rem;
+      outline: 0;
+      //width: 25%;
+      border: none;
+      padding: 1rem 1.6rem;
+    }
+  }
+  &__contents--main{
+    color: $primary-color;
+  }
+  &__contents--sub{
+    color: $primary-color;
+    line-height: 1.5;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    width: 45%;
+  }
+}
+.mail{
+  display: flex;
+  flex-direction: column;
+  margin-right: 25rem;
+}
+.footer{
+  background-color: $VeryDarkBlue;
+  color: $primary-color;
+  &__logo{
+    padding: 4rem 9rem;
+
+  }
+  p{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  &__list{
+    display: grid;
+    padding: 3rem 9rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10rem;
+  }
+  & li{
+    margin-top: 1.7rem;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 1020px){
+
+  .footer{
+    &__logo{
+      padding: 4rem 3rem;
+      fill: white;
+    }
+    &__list{
+      display: grid;
+      grid-template-columns: auto;
+      padding: 1rem 4rem;
+      &--social{
+
+      }
+    }
+
+  }
+  .header{
+    padding: 1.5rem 2rem;
+    &__nav{
+      margin-right: 2rem;
+    }
+    &__logo{
+      width: 40%;
+    }
+  }
+  li{
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+
+
+  .heading{
+    display: flex;
+    flex-direction: column-reverse;
+    &__text{
+      display: flex;
+      flex-direction: column;
+      &--main{
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+      }
+      &--sub{
+        font-size: 1.3rem;
+      }
+      &--email{
+        width: 100%;
+        margin-top: 1.5rem;
+      }
+      &--btn{
+        width: 100%;
+      }
+    }
+  }
+  .bg-img{
+    width: 100%;
+  }
+
+  .contents{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mail{
+    margin: auto;
+  }
+  .testimonial_img{
+    width: 100%;
+  }
+  .testimonial__text{
+    &--sub{
+      width: 100%;
+    }
+    &--subtwo{
+      width: 100%;
+    }
+    button {
+      margin: 1.8rem auto;
+    }  }
+  .testimonial__card{
+    width: 100%;
+  }
+
+  .access{
+    &__contents{
+      display: flex;
+      flex-direction: column;
+      &--sub{
+        width: 100%;
+      }
+      &--mail{
+        width: 100%;
+        margin-top: 2rem;
+      }
+
+    }
+  }
+
+
+}
