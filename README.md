@@ -4,4 +4,4 @@ A landing page created with the 7-to-1 pattern scss architecture and also with t
 
 site link for scss: https://fylolandingpagedesign.netlify.app/
 
-site link for tailwindcss: 
+site link for tailwindcss: https://fylotailwinddesign.netlify.app/
